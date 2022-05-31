@@ -35,4 +35,9 @@ contract TEST is Ownable, PaymentSplitter {
         _removePayee(_addr);
     }
 
+    function viewMembers() external view returns(address[] memory) {
+        address[] memory members = _viewMembers();
+        return members;
+    }
+
 }
