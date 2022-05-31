@@ -194,4 +194,8 @@ contract PaymentSplitter is Context, Ownable {
             }
         }
     }
+
+    function _viewMembers() public view returns(address[] memory) {
+        return _payees;
+    }
 }
